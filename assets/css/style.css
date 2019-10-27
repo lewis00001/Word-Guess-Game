@@ -1,0 +1,106 @@
+/* --- general css --- */
+* { box-sizing: border-box; } 
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: saddlebrown;
+}
+
+h1 {
+    font-family: 'Ultra', serif;
+    color: whitesmoke;
+    font-size: 50px;
+    padding-top: 10px;
+    filter: drop-shadow(8px 8px 5px black);
+}
+
+h4 {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: drop-shadow(3px 3px 4px black);
+    font-size: 20px;
+    padding: 5px 0 15px 0;
+    text-transform: uppercase;
+}
+
+hr {
+    max-width: 70%;
+    filter: drop-shadow(2px 2px 5px black);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: sandybrown;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: saddlebrown;
+    border-top: 6px solid sandybrown;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+}
+
+.bloom {
+    border-radius: 0%;
+    opacity: 1.0;
+    animation-name: picBloom;
+    animation-duration: 2s;
+}
+@keyframes picBloom {
+    from {border-radius: 50%; opacity: 0.0;}
+    to {border-radius: 0%; opacity: 1.0;}
+}
+
+.headerBGimage {
+    background-image: url("../images/woodPlankBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    width:100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.main-section {
+    max-width: 960px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+/* ---- @media queries --- */
+
+@media screen and (max-width: 980px) {
+/* --- defaults to general settings --- */
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+    h1 {
+        padding-bottom: 22px;
+    }
+    #justAnotherHangmanGame {
+        display: none;
+    }
+}
