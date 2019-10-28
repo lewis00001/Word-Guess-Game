@@ -24,16 +24,10 @@ h4 {
     text-transform: uppercase;
 }
 
-hr {
-    max-width: 70%;
-    filter: drop-shadow(2px 2px 5px black);
-}
-
 header {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background: sandybrown;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -45,6 +39,27 @@ footer {
     text-align: center;
     font-size: 0.8em;
     color: white;
+}
+
+p {
+    color: saddlebrown;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hr-1 {
+    max-width: 70%;
+    filter: drop-shadow(2px 2px 5px black);
+}
+
+.hr-2 {
+    border: 1px solid saddlebrown;
+}
+
+.sandColor {
+    background: sandybrown;
 }
 
 .bloom {
@@ -79,10 +94,153 @@ footer {
 
 .main-section {
     max-width: 960px;
-    padding: 30px;
-    margin-bottom: 40px;
-    border: 1px solid #ddd;
-    background: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.buttonDivMajor {
+    width: 130px;
+    min-height: 35px;
+    background-color: #13598B;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    filter: drop-shadow(1px 1px 1px saddlebrown);
+    display: inline-block;
+}
+
+.buttonDivMinor {
+    width: 130px;
+    min-height: 35px;
+    background-color: saddlebrown;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    filter: drop-shadow(1px 1px 1px saddlebrown);
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 15px;
+    background-color: sandybrown;
+    width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 16px;
+    z-index: 99;
+    filter: drop-shadow(1px 1px 4px saddlebrown);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dataDiv {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 8px;
+    display: block;
+    padding: 8px;
+    background-color: saddlebrown;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hiddenWord {
+    width: 400px;
+    border-radius: 12px;
+    min-height: 50px;
+    border: 3px solid saddlebrown;
+    display: block;
+    margin: 0 auto 5px auto;
+    background-color: rgb(255, 183, 119);
+    padding: 8px;
+}
+
+.dataDivOutput {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px;
+    margin: 8px;
+    background-color: sandybrown;
+    display: block;
+}
+.bombDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bombBGdiv {
+    min-width: 25%;
+    min-height: 50px;
+    background-color: saddlebrown;
+    border-radius: 8px;
+}
+
+#hiddenWordTitle {
+    text-align: center;
+    color: saddlebrown;
+    font-size: 20px;
+}
+
+#hiddenWordHint {
+    text-align: center;
+    color: saddlebrown;
+    font-size: 18px;
+}
+
+#iGuessOutput {
+    min-width: 200px;
+    min-height: 60px;
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+#oldWest {
+    color: saddlebrown;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#bombDiv {
+    width: 200px;
+    height: 200px;
+    border: 3px solid saddlebrown;
+    border-radius: 50%;
+    background-image: url("../images/tnt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    width: 200px;
+    height: 200px;
 }
 
 /* ---- @media queries --- */
@@ -99,6 +257,7 @@ footer {
 
     h1 {
         padding-bottom: 22px;
+        text-decoration: underline;
     }
     #justAnotherHangmanGame {
         display: none;

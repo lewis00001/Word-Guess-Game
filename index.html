@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hang'em Up</title>
+    <title>Blow'em Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" 
         href="assets/images/favicon/favicon-16x16.png">
@@ -16,20 +16,78 @@
 
 <body>
 
-    <header>
+    <header class="sandColor">
         <div class="container clearfix headerBGimage">
-            <h1>Hang'em Up</h1>
+            <h1>Blow'em Up</h1>
             <div id="justAnotherHangmanGame">
-                <br><hr>
-                <h4>- just another hangman game -</h4>
+                <br><hr class="hr-1">
+                <h4>- just another explosive game -</h4>
             </div>
         </div>
     </header>
 
-    <div id="main-container" class="container">
+    <div class="container sandColor">
+        <div class="flex-container">
+            <div>
+                <div class="buttonDivMajor">Play Game</div>
+            </div>
+            <div id="oldWest">
+                The Old West
+            </div>
+            <div class="dropdown">
+                <div class="buttonDivMinor">Instructions</div>
+                <div class="dropdown-content">
+                    <h5>Press 'Play Game' to get started!</h5>
+                    <br>
+                    <ul>
+                        <li>A hidden word and hint will automatically be generated.</li>
+                        <br>
+                        <li>You will need to guess the by pressing letters on the keybord.</li>
+                        <br>
+                        <li>Correctly guessed letters will be added to the hidden word.</li>
+                        <br>
+                        <li>Incorrectly guessed letters will result in the bomb fuse burning.</li>
+                        <br>
+                        <li>The objective is to survive without being blown up. Good Luck!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-2">
+
         <section class="main-section clearfix">
-            
+            <div id="hiddenWordTitle">
+                Hidden Word
+            </div>
+            <div class="hiddenWord" id="hiddenWord"></div>
+            <div id="hiddenWordHint">The hint will go here</div>
+            <hr class="hr-2">
+            <div class="flex-container">
+                <div class="dataDiv" id="won">
+                    Won
+                    <div class="dataDivOutput" id="wonOutput"></div>
+                </div>
+                <div class="dataDiv" id="iGuesses">
+                    Incorrect Guesses
+                    <div class="dataDivOutput" id="iGuessOutput">
+                        sdfgsdfgsdf
+                        <hr class="hr-2">
+                        <p>Remaining:<span id="guessesRemaining"></span></p>
+                    </div>
+                </div>
+                <div class="dataDiv" id="lost">
+                    Lost
+                    <div class="dataDivOutput" id="lostOutput"></div>
+                </div>
+            </div>
+            <div class="bombDiv">
+                <div class="bombBGdiv"></div>
+                <div id="bombDiv"></div>
+                <div class="bombBGdiv"></div>
+            </div>
+        </section>    
     </div>
+
 
     <footer>
         <div class="container">
