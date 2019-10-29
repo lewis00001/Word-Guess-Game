@@ -63,14 +63,12 @@ p {
 }
 
 .bloom {
-    border-radius: 0%;
-    opacity: 1.0;
     animation-name: picBloom;
     animation-duration: 2s;
 }
 @keyframes picBloom {
     from {border-radius: 50%; opacity: 0.0;}
-    to {border-radius: 0%; opacity: 1.0;}
+    to {border-radius: 4px; opacity: 1.0;}
 }
 
 .headerBGimage {

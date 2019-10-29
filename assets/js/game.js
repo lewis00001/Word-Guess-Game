@@ -75,7 +75,7 @@ function addLetterDivs() {
     console.log("num letters in word " + numLetters);
     _hiddenWord.innerHTML = "";
     for (let i = 0; i < numLetters; i++) {
-        _hiddenWord.innerHTML += "<div class='letterBG'></div>";
+        _hiddenWord.innerHTML += "<div class='letterBG bloom'></div>";
     }
 }
 // adds the hint for the user under the hidden word
