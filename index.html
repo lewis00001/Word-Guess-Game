@@ -29,7 +29,7 @@
     <div class="container sandColor">
         <div class="flex-container">
             <div>
-                <div class="buttonDivMajor">Play Game</div>
+                <div class="buttonDivMajor" onclick="playGame()">Play Game</div>
             </div>
             <div id="oldWest">
                 The Old West
@@ -59,8 +59,8 @@
             <div id="hiddenWordTitle">
                 Hidden Word
             </div>
-            <div class="hiddenWord" id="hiddenWord"></div>
-            <div id="hiddenWordHint">The hint will go here</div>
+            <div class="hiddenWord flex-container-2" id="hiddenWord"></div>
+            <div id="hiddenWordHint">Hint:</div>
             <hr class="hr-2">
             <div class="flex-container">
                 <div class="dataDiv" id="won">
@@ -69,10 +69,10 @@
                 </div>
                 <div class="dataDiv" id="iGuesses">
                     Incorrect Guesses
-                    <div class="dataDivOutput" id="iGuessOutput">
-                        sdfgsdfgsdf
+                    <div class="dataDivOutput">
+                        <div id="iGuessOutput"></div>
                         <hr class="hr-2">
-                        <p>Remaining:<span id="guessesRemaining"></span></p>
+                        <p>Remaining: <span id="guessesRemaining"></span></p>
                     </div>
                 </div>
                 <div class="dataDiv" id="lost">
@@ -94,6 +94,8 @@
             © 2019 | E. Lewis Lockhart | Springville, Utah
         </div>
     </footer>
+
+    <script src="assets/js/game.js"></script>
     
 </body>
 
