@@ -194,6 +194,7 @@ p {
     margin: 8px;
     background-color: sandybrown;
     display: block;
+    word-wrap: break-word;
 }
 
 .bombDiv {
@@ -220,6 +221,28 @@ p {
     border-radius: 4px;
 }
 
+.letterText {
+    font-size: 28px;
+    color: whitesmoke;
+    filter: drop-shadow(2px 2px 5px black);
+} 
+
+/* the hidden class should be removed from a letter
+once it is guessed */
+.hidden {
+    display: none;
+}
+
+.oldWest {
+    color: saddlebrown;
+}
+.youWon {
+    color: green;
+}
+.youLost {
+    color: rgb(194, 32, 32);
+}
+
 #hiddenWordTitle {
     text-align: center;
     color: saddlebrown;
@@ -234,7 +257,7 @@ p {
 
 #iGuessOutput {
     min-width: 200px;
-    min-height: 60px;
+    min-height: 40px;
     color: saddlebrown;
     font-weight: bold;
 }
@@ -244,7 +267,6 @@ p {
 }
 
 #oldWest {
-    color: saddlebrown;
     font-size: 30px;
     font-weight: 600;
 }
