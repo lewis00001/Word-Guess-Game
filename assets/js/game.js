@@ -120,6 +120,8 @@ function userInput(activeStringObj, passed_key) {
                     var abc = document.getElementById('letter-' + i);
                     $(abc).removeClass("hidden");
                     count.c_letters += 1;
+                    // play sound
+                    $('audio#ting')[0].play();
                 }
             }
             activeStringObj.c_lettersGuessed.push(key);
@@ -130,6 +132,8 @@ function userInput(activeStringObj, passed_key) {
             document.getElementById('iGuessOutput').innerText = activeStringObj.i_lettersGuessed;
             // decrements incorrect letters guesses count and displays it
             count.remaining -= 1;
+            // play sound
+            $('audio#ping')[0].play();
             document.getElementById('guessesRemaining').innerHTML = count.remaining;
         }
         // do check for endRound conditions 
@@ -149,6 +153,9 @@ function endRound() {
         // burns the wick based on lost count
         image.tntImg.style.backgroundImage = image.fuseProgress[count.lost + 1];
         if (count.lost === 11) {
+            // play sound
+            $('audio#explode')[0].play();
+            // display alert
             setTimeout(function(){ alert(
                 "You are reading this as a ghost.\n" +  
                 "The bomb exploded and you are now dead.\n" + 
