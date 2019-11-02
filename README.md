@@ -12,7 +12,7 @@ Press 'Play Game' to get started!
 
 ## Screenshot
 
-![game ui](assets/images/readMeScreenshot.png)
+![game ui](assets/images/readMeScreenshot.PNG)
 
 
 
