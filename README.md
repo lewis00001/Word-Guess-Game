@@ -1,6 +1,4 @@
-# Word-Guess-Game
-This is a hangman type game ... so, yeah. Give it try. 
-
+# Word-Guess-Game / Blow'em Up
 ## Game Instructions
 
 Press 'Play Game' to get started!
